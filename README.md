@@ -1,6 +1,8 @@
 # ViewAccessor
 
-An alternative method of sharing state between Rails controllers and views. This library is directly inspired [this example](https://gist.github.com/Odaeus/5238423) written by Andrew France.
+_This repo is an experiment and strays from the standard Rails way._
+
+An alternative method of sharing state between Rails controllers and views. This library is directly inspired [this example](https://gist.github.com/Odaeus/5238423) written by Andrew France. The tests are inspired by [decent_exposure](https://github.com/voxdolo/decent_exposure).
 
 ## Install
 
