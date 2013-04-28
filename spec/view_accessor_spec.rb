@@ -44,11 +44,8 @@ describe ViewAccessor::Core do
       klass.new
     }
 
-    it_behaves_like "an attribute method", base_names
-    it_behaves_like "an attribute method", setters
-    it_behaves_like "a helper method", base_names
-    it_behaves_like "a helper method", setters
-    it_behaves_like "a hidden action", base_names
-    it_behaves_like "a hidden action", setters
+    it_behaves_like "an attribute method", base_names + setters
+    it_behaves_like "a helper method", base_names + setters
+    it_behaves_like "a hidden action", base_names + setters
   end
 end
