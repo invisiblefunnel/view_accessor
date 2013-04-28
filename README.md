@@ -5,14 +5,12 @@ An alternative method of sharing state between Rails controllers and views. This
 ## Install
 
 ```ruby
-# Gemfile
-gem 'view_accessor'
+gem 'view_accessor', github: 'invisiblefunnel/view_accessor'
 ```
 
 ## Usage
 
 ```ruby
-# app/controllers/widgets_controller.rb
 class WidgetsController < ApplicationController
   view_accessor :widgets
 
