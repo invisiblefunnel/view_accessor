@@ -3,6 +3,13 @@ $:.push '../lib'
 
 require "view_accessor"
 
+RSpec.configure do |config|
+  config.order = "random"
+  config.expect_with :rspec do |c|
+    c.syntax = :expect
+  end
+end
+
 shared_examples "an attribute method" do |names|
   it "defines a method with a given name" do
     names.each do |name|
