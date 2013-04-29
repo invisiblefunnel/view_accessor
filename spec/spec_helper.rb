@@ -10,7 +10,7 @@ RSpec.configure do |config|
   end
 end
 
-shared_examples "an attribute method" do |names|
+shared_examples "an attribute method" do
   it "defines a method with a given name" do
     names.each do |name|
       expect(controller).to respond_to(name)
@@ -18,7 +18,7 @@ shared_examples "an attribute method" do |names|
   end
 end
 
-shared_examples "a helper method" do |names|
+shared_examples "a helper method" do
   it "exposes the method to the view layer" do
     names.each do |name|
       expect(controller._helper_methods).to include(name)
@@ -26,7 +26,7 @@ shared_examples "a helper method" do |names|
   end
 end
 
-shared_examples "a hidden action" do |names|
+shared_examples "a hidden action" do
   it "prevents the method from being routed to" do
     names.each do |name|
       expect(controller.hidden_actions).to include(name.to_s)
